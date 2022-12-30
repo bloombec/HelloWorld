@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+static int dishes = 0;
+
+void Dish(char N)
+{
+	char Dish []= { 0 };
+	 	 
+	
+	while (1)
+	{
+		Dish[dishes] = N;
+		dishes++;
+
+		if (N == 'e' || N == 'E')
+		{
+			for (int i = 0; i < dishes; i++)
+			{
+				cout << Dish[i] << endl;
+			}
+			break;
+		}
+	}
+}
+
+int main()
+{
+	
+	char Eat;
+	cin >> Eat;
+	Dish(Eat);
+	system( "cls");
+
+	return 0;
+}
+
+// system("cls");
